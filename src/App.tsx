@@ -107,8 +107,11 @@ function App() {
         {/* ROI Calculator */}
         <ROICalculator />
 
-        {/* Call to Action Section */}
-        <section className="mt-20 bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12 text-center text-white">
+      </main>
+
+      {/* Call to Action Section - Full Width */}
+      <section className="mt-20 bg-gradient-to-r from-purple-600 to-blue-600 py-16 text-center text-white">
+        <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Sell stories, not trips.
           </h2>
@@ -123,8 +126,8 @@ function App() {
               Schedule Consultation
             </button>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16 mt-20">
