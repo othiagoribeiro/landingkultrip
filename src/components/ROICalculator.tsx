@@ -7,9 +7,11 @@ export const ROICalculator: React.FC = () => {
   const [currentSalesRate, setCurrentSalesRate] = useState(15);
   const [averageTicket, setAverageTicket] = useState(1500);
   const [kultripActive, setKultripActive] = useState(false);
-  const [kultripLeadRate, setKultripLeadRate] = useState(3.5);
 
   const kultripSalesRate = 25;
+  
+  // Kultrip Lead Rate é sempre a taxa atual + 2%
+  const kultripLeadRate = currentLeadRate + 2;
 
   // Current scenario calculations
   const currentLeads = Math.round((monthlyVisits * currentLeadRate) / 100);
@@ -151,18 +153,9 @@ export const ROICalculator: React.FC = () => {
                 <div className="text-sm text-gray-600 mb-2">Lead rate</div>
                 {kultripActive ? (
                   <div className="flex items-center gap-2">
-                    <input
-                      type="number"
-                      value={kultripLeadRate}
-                      onChange={(e) => setKultripLeadRate(Number(e.target.value))}
-                      className="w-16 p-1 text-xl font-bold text-purple-600 bg-transparent border-b-2 border-purple-300 focus:border-purple-500 focus:outline-none"
-                      min="0"
-                      max="100"
-                      step="0.1"
-                    />
-                    <span className="text-xl font-bold text-purple-600">%</span>
+                    <span className="text-2xl font-bold text-purple-600">{kultripLeadRate}%</span>
                     <span className="text-sm text-green-600 ml-1">
-                      (+{(kultripLeadRate - currentLeadRate).toFixed(1)}%)
+                      (+2.0%)
                     </span>
                   </div>
                 ) : (
