@@ -163,7 +163,6 @@ export const ROICalculator: React.FC = () => {
                     {displayLeadRate}%
                   </div>
                 )}
-                </div>
               </div>
               <div className="bg-gray-50 rounded-xl p-4">
                 <div className="text-sm text-gray-600 mb-1">Sales rate</div>
