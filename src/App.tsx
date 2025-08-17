@@ -54,6 +54,20 @@ function App() {
           </div>
         </div>
 
+        {/* Magic of Stories Section */}
+        <section className="mt-16 text-center p-6 bg-white rounded-2xl shadow-lg max-w-4xl mx-auto">
+          <div className="flex items-center justify-center gap-2 mb-3">
+            <span className="text-2xl">✨</span>
+            <h2 className="text-xl font-bold text-gray-800">
+              The magic of stories drives your sales
+            </h2>
+          </div>
+          <p className="text-gray-600 leading-relaxed">
+            Kultrip helps you inspire your visitors, capture more qualified leads and close more sales 
+            thanks to the emotional power of stories. Travelers don't just look for destinations, they seek to live experiences.
+          </p>
+        </section>
+
         {/* Features Section */}
         <section className="mt-20 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">

@@ -244,19 +244,6 @@ export const ROICalculator: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom Message */}
-      <div className="text-center mt-12 p-6 bg-white rounded-2xl shadow-lg">
-        <div className="flex items-center justify-center gap-2 mb-3">
-          <span className="text-2xl">✨</span>
-          <h4 className="text-xl font-bold text-gray-800">
-            The magic of stories drives your sales
-          </h4>
-        </div>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Kultrip helps you inspire your visitors, capture more qualified leads and close more sales 
-          thanks to the emotional power of stories. Travelers don't just look for destinations, they seek to live experiences.
-        </p>
-      </div>
     </section>
   );
 };
