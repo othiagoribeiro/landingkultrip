@@ -164,23 +164,23 @@ function App() {
               <h3 className="text-xl font-bold mb-6">Quick Links</h3>
               <ul className="space-y-4">
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    Home
+                  <a href="#integrate" className="text-gray-400 hover:text-white transition-colors">
+                    Integrate
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    Destinations
+                  <a href="#calculator" className="text-gray-400 hover:text-white transition-colors">
+                    Calculator
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    How It Works
+                  <a href="#consultation" className="text-gray-400 hover:text-white transition-colors">
+                    Book a Consultation
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    Reviews
+                  <a href="#kultrip" className="text-gray-400 hover:text-white transition-colors">
+                    Kultrip
                   </a>
                 </li>
               </ul>
@@ -192,15 +192,15 @@ function App() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-purple-400" />
-                  <span className="text-gray-400">+1 (555) 123-DREAM</span>
+                  <span className="text-gray-400">+34 622 17 68 54</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-purple-400" />
-                  <span className="text-gray-400">hello@kultrip.com</span>
+                  <span className="text-gray-400">contact@kultrip.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-purple-400" />
-                  <span className="text-gray-400">New York, NY</span>
+                  <span className="text-gray-400">Mallorca, Spain</span>
                 </div>
               </div>
             </div>
