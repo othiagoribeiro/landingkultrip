@@ -205,15 +205,16 @@ function App() {
 
           {/* Privacy Notice */}
           <div className="border-t border-gray-800 mt-12 pt-8">
-            <div className="text-xs text-gray-500 max-w-4xl mx-auto text-center">
-              <p className="mb-4">
-                <strong>Data Privacy:</strong> The information collected is used solely to create 
-                personalized itineraries and establish commercial contact. We do not share data with third parties.
-              </p>
-              <p>
-                By providing your email address, you agree to receive your personalized guide and communications 
-                related to our travel services.
-              </p>
+            <div className="flex justify-center gap-8">
+              <a href="#privacy" className="text-gray-400 hover:text-white transition-colors text-sm">
+                Privacy Policy
+              </a>
+              <a href="#terms" className="text-gray-400 hover:text-white transition-colors text-sm">
+                Terms of Service
+              </a>
+              <a href="#support" className="text-gray-400 hover:text-white transition-colors text-sm">
+                Support
+              </a>
             </div>
           </div>
         </div>
