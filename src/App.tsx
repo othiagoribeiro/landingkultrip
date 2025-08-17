@@ -1,5 +1,4 @@
 import React from 'react';
-import { ConversationalWidget } from './components/ConversationalWidget';
 import { ROICalculator } from './components/ROICalculator';
 import { Film, Target, Mail, Heart, Globe, Phone, MapPin } from 'lucide-react';
 
@@ -53,11 +52,6 @@ function App() {
               </p>
             </div>
           </div>
-        </div>
-
-        {/* Conversational Widget */}
-        <div className="max-w-4xl mx-auto mb-20">
-          <ConversationalWidget />
         </div>
 
         {/* Features Section */}
