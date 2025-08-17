@@ -1,7 +1,7 @@
 import React from 'react';
-import { ImageSlideshow } from './components/ImageSlideshow';
 import { ConversationalWidget } from './components/ConversationalWidget';
 import { ROICalculator } from './components/ROICalculator';
+import { Film, Target, Mail } from 'lucide-react';
 
 function App() {
   return (
@@ -32,16 +32,19 @@ function App() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-stretch min-h-[80vh]">
-          {/* Left Side - Image Slideshow */}
-          <div className="relative">
-            <ImageSlideshow />
-          </div>
+        {/* Hero Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+            Crea tu itinerario turístico inspirado por tu historia favorita
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-600 mb-12 font-medium">
+            Vive una aventura de película
+          </p>
+        </div>
 
-          {/* Right Side - Conversational Widget */}
-          <div className="relative">
-            <ConversationalWidget />
-          </div>
+        {/* Conversational Widget */}
+        <div className="max-w-4xl mx-auto mb-20">
+          <ConversationalWidget />
         </div>
 
         {/* Features Section */}
@@ -51,8 +54,8 @@ function App() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg">
-              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎬</span>
+              <div className="w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <Film className="w-8 h-8 text-purple-600" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-semibold mb-3">Experiencias Únicas</h3>
               <p className="text-gray-600">
@@ -60,8 +63,8 @@ function App() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎯</span>
+              <div className="w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <Target className="w-8 h-8 text-purple-600" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-semibold mb-3">Personalización Total</h3>
               <p className="text-gray-600">
@@ -69,8 +72,8 @@ function App() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📧</span>
+              <div className="w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <Mail className="w-8 h-8 text-purple-600" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-semibold mb-3">Generación de Leads</h3>
               <p className="text-gray-600">
