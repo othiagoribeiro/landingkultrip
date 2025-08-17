@@ -95,11 +95,7 @@ export const ConversationalWidget: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [email, setEmail] = useState('');
-  const [isStarted, setIsStarted] = useState(false);
-
-  const handleStart = () => {
-    setIsStarted(true);
-  };
+  const [isStarted, setIsStarted] = useState(true);
 
   const handleAnswer = (value: string) => {
     setAnswers(prev => ({ ...prev, [steps[currentStep].id]: value }));
@@ -119,20 +115,6 @@ export const ConversationalWidget: React.FC = () => {
       }, 300);
     }
   };
-
-  if (!isStarted) {
-    return (
-      <div className="bg-white rounded-3xl shadow-2xl p-8 h-full flex flex-col justify-center items-center text-center">
-        <button
-          onClick={handleStart}
-          className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mt-8"
-        >
-          Start your journey
-          <ChevronRight className="w-5 h-5" />
-        </button>
-      </div>
-    );
-  }
 
   const currentStepData = steps[currentStep];
 
