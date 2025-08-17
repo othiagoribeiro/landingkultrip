@@ -105,11 +105,10 @@ function App() {
         {/* Call to Action Section */}
         <section className="mt-20 bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12 text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Live Your Story?
+            Sell stories, not trips.
           </h2>
           <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto font-light">
-            Join thousands of travelers who've turned their favorite stories into unforgettable 
-            adventures. Your next chapter starts here.
+            Boost sales with personalized itineraries powered by Kultrip.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
