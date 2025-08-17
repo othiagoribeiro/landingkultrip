@@ -45,10 +45,10 @@ function App() {
           <div className="absolute inset-0 flex items-center justify-center text-center text-white px-6">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
-                Create your travel itinerary inspired by your favorite story
+                Create story-inspired itineraries
               </h1>
               <p className="text-xl md:text-2xl mb-8 font-medium drop-shadow-md">
-                Live a movie-like adventure
+                Attract qualified leads, boost conversions, and increase sales with Kultrip
               </p>
             </div>
           </div>
