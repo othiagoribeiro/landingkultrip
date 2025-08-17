@@ -23,7 +23,7 @@ function App() {
               </h1>
             </div>
             <div className="text-sm text-gray-600">
-              Widget for <span className="font-semibold">Your Agency</span>
+              Discover the potential ROI offered by Kultrip.
             </div>
           </div>
         </div>
