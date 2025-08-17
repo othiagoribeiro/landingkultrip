@@ -11,9 +11,12 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img 
-                src="/icone-roxo.png" 
+                src="/src/assets/icone-roxo.png" 
                 alt="Kultrip" 
                 className="w-10 h-10"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
               />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 Kultrip
@@ -29,7 +32,7 @@ function App() {
       {/* Hero Section - Full Width */}
       <div className="relative h-96 md:h-[500px] w-full overflow-hidden">
         <img 
-          src="/Foto-Capa-Kultrip-10---Chile copy.png" 
+          src="/src/assets/Foto-Capa-Kultrip-10---Chile copy.png" 
           alt="Chile Travel Adventure" 
           className="w-full h-full object-cover"
         />
