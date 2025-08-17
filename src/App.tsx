@@ -22,6 +22,9 @@ function App() {
                 Kultrip
               </h1>
             </div>
+            <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+              Book a Call
+            </button>
           </div>
         </div>
       </header>
@@ -120,9 +123,6 @@ function App() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                  Start Free Trial
-                </button>
                 <button className="border-2 border-purple-200 text-purple-700 px-8 py-4 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300">
                   Schedule Demo
                 </button>
@@ -172,22 +172,61 @@ function App() {
 
       </main>
 
-      {/* Call to Action Section - Full Width */}
+      {/* Lead Form Section - Full Width */}
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 py-16 text-center text-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Sell stories, not trips.
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Ready to boost your sales?
           </h2>
-          <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto font-light">
-            Boost sales with personalized itineraries powered by Kultrip.
+          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto font-light">
+            Get a personalized demo and see how Kultrip can transform your agency.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
-              Start Planning Now
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-purple-600 transition-all duration-300 transform hover:scale-105">
-              Schedule Consultation
-            </button>
+          
+          {/* Lead Form */}
+          <div className="max-w-md mx-auto">
+            <form className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 space-y-4">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Nome *"
+                  required
+                  className="w-full p-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email *"
+                  required
+                  className="w-full p-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
+                />
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Telefone *"
+                  required
+                  className="w-full p-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Empresa *"
+                  required
+                  className="w-full p-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
+                />
+              </div>
+              <p className="text-sm text-white/80 text-left">
+                * Todos os dados são obrigatórios
+              </p>
+              <button
+                type="submit"
+                className="w-full bg-white text-purple-600 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              >
+                Get Your Demo
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -237,8 +276,9 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a href="#consultation" className="text-gray-400 hover:text-white transition-colors">
-                    Book a Consultation
+                  <button className="text-gray-400 hover:text-white transition-colors">
+                    Book a Call
+                  </button>
                   </a>
                 </li>
                 <li>
