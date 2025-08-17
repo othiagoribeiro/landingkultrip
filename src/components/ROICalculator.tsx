@@ -7,9 +7,8 @@ export const ROICalculator: React.FC = () => {
   const [currentSalesRate, setCurrentSalesRate] = useState(15);
   const [averageTicket, setAverageTicket] = useState(1500);
   const [kultripActive, setKultripActive] = useState(false);
+  const [kultripLeadRate, setKultripLeadRate] = useState(3.5);
 
-  // Kultrip improved rates
-  const kultripLeadRate = 3.5;
   const kultripSalesRate = 25;
 
   // Current scenario calculations
@@ -149,14 +148,28 @@ export const ROICalculator: React.FC = () => {
             {/* Conversion Rates */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-gray-50 rounded-xl p-4">
-                <div className="text-sm text-gray-600 mb-1">Lead rate</div>
-                <div className={`text-2xl font-bold ${kultripActive ? 'text-purple-600' : 'text-gray-800'}`}>
-                  {displayLeadRate}%
-                  {kultripActive && (
-                    <span className="text-sm text-green-600 ml-2">
+                <div className="text-sm text-gray-600 mb-2">Lead rate</div>
+                {kultripActive ? (
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="number"
+                      value={kultripLeadRate}
+                      onChange={(e) => setKultripLeadRate(Number(e.target.value))}
+                      className="w-16 p-1 text-xl font-bold text-purple-600 bg-transparent border-b-2 border-purple-300 focus:border-purple-500 focus:outline-none"
+                      min="0"
+                      max="100"
+                      step="0.1"
+                    />
+                    <span className="text-xl font-bold text-purple-600">%</span>
+                    <span className="text-sm text-green-600 ml-1">
                       (+{(kultripLeadRate - currentLeadRate).toFixed(1)}%)
                     </span>
-                  )}
+                  </div>
+                ) : (
+                  <div className="text-2xl font-bold text-gray-800">
+                    {displayLeadRate}%
+                  </div>
+                )}
                 </div>
               </div>
               <div className="bg-gray-50 rounded-xl p-4">
