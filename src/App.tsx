@@ -21,9 +21,7 @@ function App() {
         </div>
       </header>
 
-    </div>
-
-    {/* Hero Section - Full Width */}
+      {/* Hero Section - Full Width */}
     <div className="relative h-96 md:h-[500px] overflow-hidden">
       <img 
         src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
@@ -43,7 +41,6 @@ function App() {
       </div>
     </div>
 
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-6 py-12">
         {/* Magic of Stories Section */}
