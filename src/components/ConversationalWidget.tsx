@@ -11,84 +11,84 @@ interface Step {
 const steps: Step[] = [
   {
     id: 1,
-    question: '¿A qué destino te gustaría viajar?',
+    question: 'Which destination would you like to travel to?',
     type: 'options',
     options: [
-      { label: 'París', icon: <MapPin className="w-5 h-5" />, value: 'paris' },
-      { label: 'Londres', icon: <MapPin className="w-5 h-5" />, value: 'london' },
-      { label: 'Nueva York', icon: <MapPin className="w-5 h-5" />, value: 'newyork' },
-      { label: 'España', icon: <MapPin className="w-5 h-5" />, value: 'spain' },
-      { label: 'Nueva Zelanda', icon: <MapPin className="w-5 h-5" />, value: 'newzealand' },
-      { label: 'Escocia', icon: <MapPin className="w-5 h-5" />, value: 'scotland' }
+      { label: 'Paris', icon: <MapPin className="w-5 h-5" />, value: 'paris' },
+      { label: 'London', icon: <MapPin className="w-5 h-5" />, value: 'london' },
+      { label: 'New York', icon: <MapPin className="w-5 h-5" />, value: 'newyork' },
+      { label: 'Spain', icon: <MapPin className="w-5 h-5" />, value: 'spain' },
+      { label: 'New Zealand', icon: <MapPin className="w-5 h-5" />, value: 'newzealand' },
+      { label: 'Scotland', icon: <MapPin className="w-5 h-5" />, value: 'scotland' }
     ]
   },
   {
     id: 2,
-    question: '¿Qué historia te gustaría vivir en este viaje?',
+    question: 'Which story would you like to live on this trip?',
     type: 'options',
     options: [
       { label: 'Harry Potter', icon: <Book className="w-5 h-5" />, value: 'harrypotter' },
-      { label: 'Don Quijote', icon: <Book className="w-5 h-5" />, value: 'donquijote' },
+      { label: 'Don Quixote', icon: <Book className="w-5 h-5" />, value: 'donquijote' },
       { label: 'Emily in Paris', icon: <Book className="w-5 h-5" />, value: 'emilyinparis' },
-      { label: 'El Señor de los Anillos', icon: <Book className="w-5 h-5" />, value: 'lotr' },
+      { label: 'The Lord of the Rings', icon: <Book className="w-5 h-5" />, value: 'lotr' },
       { label: 'Gossip Girl', icon: <Book className="w-5 h-5" />, value: 'gossipgirl' },
       { label: 'Outlander', icon: <Book className="w-5 h-5" />, value: 'outlander' }
     ]
   },
   {
     id: 3,
-    question: '¿Qué tipo de actividades te interesan?',
+    question: 'What type of activities interest you?',
     type: 'options',
     options: [
-      { label: 'Gastronomía', icon: <Heart className="w-5 h-5" />, value: 'food' },
-      { label: 'Arte', icon: <Heart className="w-5 h-5" />, value: 'art' },
-      { label: 'Cultura', icon: <Heart className="w-5 h-5" />, value: 'culture' },
-      { label: 'Compras', icon: <Heart className="w-5 h-5" />, value: 'shopping' },
-      { label: 'Aventura', icon: <Heart className="w-5 h-5" />, value: 'adventure' },
+      { label: 'Gastronomy', icon: <Heart className="w-5 h-5" />, value: 'food' },
+      { label: 'Art', icon: <Heart className="w-5 h-5" />, value: 'art' },
+      { label: 'Culture', icon: <Heart className="w-5 h-5" />, value: 'culture' },
+      { label: 'Shopping', icon: <Heart className="w-5 h-5" />, value: 'shopping' },
+      { label: 'Adventure', icon: <Heart className="w-5 h-5" />, value: 'adventure' },
       { label: 'Relax', icon: <Heart className="w-5 h-5" />, value: 'relax' }
     ]
   },
   {
     id: 4,
-    question: '¿Con quién viajas?',
+    question: 'Who are you traveling with?',
     type: 'options',
     options: [
       { label: 'Solo', icon: <Users className="w-5 h-5" />, value: 'solo' },
-      { label: 'Pareja', icon: <Users className="w-5 h-5" />, value: 'couple' },
-      { label: 'Familia', icon: <Users className="w-5 h-5" />, value: 'family' },
-      { label: 'Amigos', icon: <Users className="w-5 h-5" />, value: 'friends' }
+      { label: 'Couple', icon: <Users className="w-5 h-5" />, value: 'couple' },
+      { label: 'Family', icon: <Users className="w-5 h-5" />, value: 'family' },
+      { label: 'Friends', icon: <Users className="w-5 h-5" />, value: 'friends' }
     ]
   },
   {
     id: 5,
-    question: '¿Cuántos días dura tu viaje?',
+    question: 'How many days does your trip last?',
     type: 'options',
     options: [
-      { label: '1-3 días', icon: <Calendar className="w-5 h-5" />, value: '1-3' },
-      { label: '4-7 días', icon: <Calendar className="w-5 h-5" />, value: '4-7' },
-      { label: '1-2 semanas', icon: <Calendar className="w-5 h-5" />, value: '1-2weeks' },
-      { label: 'Más de 2 semanas', icon: <Calendar className="w-5 h-5" />, value: '2weeks+' }
+      { label: '1-3 days', icon: <Calendar className="w-5 h-5" />, value: '1-3' },
+      { label: '4-7 days', icon: <Calendar className="w-5 h-5" />, value: '4-7' },
+      { label: '1-2 weeks', icon: <Calendar className="w-5 h-5" />, value: '1-2weeks' },
+      { label: 'More than 2 weeks', icon: <Calendar className="w-5 h-5" />, value: '2weeks+' }
     ]
   },
   {
     id: 6,
-    question: 'Introduce tu correo para recibir tu guía personalizada',
+    question: 'Enter your email to receive your personalized guide',
     type: 'email'
   },
   {
     id: 7,
-    question: 'Tu itinerario personalizado',
+    question: 'Your personalized itinerary',
     type: 'summary'
   }
 ];
 
 const recommendedPlaces = [
-  'Torre Eiffel - Escenas románticas',
-  'Louvre - Arte y cultura',
-  'Montmartre - Cafés parisinos',
-  'Champs-Élysées - Compras de lujo',
-  'Seine - Paseo en barco',
-  'Versalles - Historia y jardines'
+  'Eiffel Tower - Romantic scenes',
+  'Louvre - Art and culture',
+  'Montmartre - Parisian cafés',
+  'Champs-Élysées - Luxury shopping',
+  'Seine - Boat ride',
+  'Versailles - History and gardens'
 ];
 
 export const ConversationalWidget: React.FC = () => {
@@ -133,10 +133,10 @@ export const ConversationalWidget: React.FC = () => {
             }}
           />
           <h3 className="text-3xl font-bold text-gray-800 mb-4">
-            Descubre tu próxima aventura
+            Discover your next adventure
           </h3>
           <p className="text-lg text-gray-600 mb-8">
-            Crea un itinerario único inspirado en tus historias favoritas
+            Create a unique itinerary inspired by your favorite stories
           </p>
         </div>
         
@@ -144,7 +144,7 @@ export const ConversationalWidget: React.FC = () => {
           onClick={handleStart}
           className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
         >
-          Empieza tu viaje
+          Start your journey
           <ChevronRight className="w-5 h-5" />
         </button>
       </div>
@@ -158,7 +158,7 @@ export const ConversationalWidget: React.FC = () => {
       {/* Progress bar */}
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-sm text-gray-500">Paso {currentStep + 1} de {steps.length}</span>
+          <span className="text-sm text-gray-500">Step {currentStep + 1} of {steps.length}</span>
           <span className="text-sm text-gray-500">{Math.round(((currentStep + 1) / steps.length) * 100)}%</span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2">
@@ -210,7 +210,7 @@ export const ConversationalWidget: React.FC = () => {
               disabled={!email}
               className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-xl font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Recibir mi guía personalizada
+              Get my personalized guide
             </button>
           </div>
         )}
@@ -220,15 +220,15 @@ export const ConversationalWidget: React.FC = () => {
             <div className="mb-8">
               <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
               <h4 className="text-xl font-bold text-gray-800 mb-4">
-                ¡Tu guía está lista!
+                Your guide is ready!
               </h4>
               <p className="text-gray-600 mb-6">
-                Te enviaremos tu guía personalizada a tu correo y a nuestro equipo para ayudarte a vivir esta experiencia.
+                We'll send your personalized guide to your email and to our team to help you live this experience.
               </p>
             </div>
 
             <div className="bg-gray-50 rounded-xl p-6">
-              <h5 className="font-bold text-gray-800 mb-4">Lugares recomendados en tu guía:</h5>
+              <h5 className="font-bold text-gray-800 mb-4">Recommended places in your guide:</h5>
               <div className="space-y-2">
                 {recommendedPlaces.map((place, index) => (
                   <div key={index} className="flex items-center gap-2 text-left">

@@ -39,12 +39,12 @@ export const ROICalculator: React.FC = () => {
         <div className="flex items-center justify-center gap-3 mb-4">
           <Calculator className="w-8 h-8 text-purple-600" />
           <h2 className="text-3xl font-bold text-gray-800">
-            Calcula el potencial de ingresos para tu agencia con Kultrip
+            Calculate your agency's revenue potential with Kultrip
           </h2>
         </div>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Descubre cómo la integración del widget de Kultrip puede aumentar significativamente 
-          tu captación de leads y conversión a ventas, generando más ingresos para tu agencia.
+          Discover how integrating the Kultrip widget can significantly increase 
+          your lead capture and sales conversion, generating more revenue for your agency.
         </p>
       </div>
 
@@ -53,13 +53,13 @@ export const ROICalculator: React.FC = () => {
         <div className="bg-white rounded-2xl p-8 shadow-lg">
           <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
             <Target className="w-5 h-5 text-purple-600" />
-            Datos de tu agencia
+            Your agency data
           </h3>
           
           <div className="space-y-6">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Visitas mensuales a tu web
+                Monthly website visits
               </label>
               <input
                 type="number"
@@ -72,7 +72,7 @@ export const ROICalculator: React.FC = () => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Tasa de conversión actual (visitas → leads) %
+                Current conversion rate (visits → leads) %
               </label>
               <input
                 type="number"
@@ -87,7 +87,7 @@ export const ROICalculator: React.FC = () => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Tasa de conversión actual (leads → ventas) %
+                Current conversion rate (leads → sales) %
               </label>
               <input
                 type="number"
@@ -102,7 +102,7 @@ export const ROICalculator: React.FC = () => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Ticket medio por venta (€)
+                Average ticket per sale (€)
               </label>
               <input
                 type="number"
@@ -120,12 +120,12 @@ export const ROICalculator: React.FC = () => {
           <div className="flex items-center justify-between mb-6">
             <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-green-600" />
-              Resultados mensuales
+              Monthly results
             </h3>
             
             <div className="flex items-center gap-3">
               <span className={`text-sm font-medium ${!kultripActive ? 'text-gray-800' : 'text-gray-500'}`}>
-                Actual
+                Current
               </span>
               <button
                 onClick={() => setKultripActive(!kultripActive)}
@@ -140,7 +140,7 @@ export const ROICalculator: React.FC = () => {
                 />
               </button>
               <span className={`text-sm font-medium ${kultripActive ? 'text-purple-600' : 'text-gray-500'}`}>
-                Con Kultrip
+                With Kultrip
               </span>
             </div>
           </div>
@@ -149,7 +149,7 @@ export const ROICalculator: React.FC = () => {
             {/* Conversion Rates */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-gray-50 rounded-xl p-4">
-                <div className="text-sm text-gray-600 mb-1">Tasa leads</div>
+                <div className="text-sm text-gray-600 mb-1">Lead rate</div>
                 <div className={`text-2xl font-bold ${kultripActive ? 'text-purple-600' : 'text-gray-800'}`}>
                   {displayLeadRate}%
                   {kultripActive && (
@@ -160,7 +160,7 @@ export const ROICalculator: React.FC = () => {
                 </div>
               </div>
               <div className="bg-gray-50 rounded-xl p-4">
-                <div className="text-sm text-gray-600 mb-1">Tasa ventas</div>
+                <div className="text-sm text-gray-600 mb-1">Sales rate</div>
                 <div className={`text-2xl font-bold ${kultripActive ? 'text-purple-600' : 'text-gray-800'}`}>
                   {displaySalesRate}%
                   {kultripActive && (
@@ -177,7 +177,7 @@ export const ROICalculator: React.FC = () => {
               <div className="flex items-center justify-between p-4 bg-blue-50 rounded-xl">
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5 text-blue-600" />
-                  <span className="font-medium text-gray-700">Leads generados</span>
+                  <span className="font-medium text-gray-700">Generated leads</span>
                 </div>
                 <div className="text-right">
                   <div className={`text-xl font-bold ${kultripActive ? 'text-blue-600' : 'text-gray-800'}`}>
@@ -194,7 +194,7 @@ export const ROICalculator: React.FC = () => {
               <div className="flex items-center justify-between p-4 bg-green-50 rounded-xl">
                 <div className="flex items-center gap-2">
                   <Target className="w-5 h-5 text-green-600" />
-                  <span className="font-medium text-gray-700">Ventas cerradas</span>
+                  <span className="font-medium text-gray-700">Closed sales</span>
                 </div>
                 <div className="text-right">
                   <div className={`text-xl font-bold ${kultripActive ? 'text-green-600' : 'text-gray-800'}`}>
@@ -211,7 +211,7 @@ export const ROICalculator: React.FC = () => {
               <div className="flex items-center justify-between p-4 bg-purple-50 rounded-xl border-2 border-purple-200">
                 <div className="flex items-center gap-2">
                   <DollarSign className="w-5 h-5 text-purple-600" />
-                  <span className="font-medium text-gray-700">Ingresos mensuales</span>
+                  <span className="font-medium text-gray-700">Monthly revenue</span>
                 </div>
                 <div className="text-right">
                   <div className={`text-2xl font-bold ${kultripActive ? 'text-purple-600' : 'text-gray-800'}`}>
@@ -230,13 +230,13 @@ export const ROICalculator: React.FC = () => {
               <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-xl p-4 mt-6">
                 <div className="flex items-center gap-2 mb-2">
                   <Zap className="w-5 h-5 text-purple-600" />
-                  <span className="font-semibold text-purple-800">Impacto anual estimado</span>
+                  <span className="font-semibold text-purple-800">Estimated annual impact</span>
                 </div>
                 <div className="text-2xl font-bold text-purple-600">
                   +€{(additionalRevenue * 12).toLocaleString()}
                 </div>
                 <div className="text-sm text-purple-700 mt-1">
-                  Ingresos adicionales por año
+                  Additional revenue per year
                 </div>
               </div>
             )}
@@ -249,12 +249,12 @@ export const ROICalculator: React.FC = () => {
         <div className="flex items-center justify-center gap-2 mb-3">
           <span className="text-2xl">✨</span>
           <h4 className="text-xl font-bold text-gray-800">
-            La magia de las historias impulsa tus ventas
+            The magic of stories drives your sales
           </h4>
         </div>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Kultrip te ayuda a inspirar a tus visitantes, captar más leads cualificados y cerrar más ventas 
-          gracias al poder emocional de las historias. Los viajeros no solo buscan destinos, buscan vivir experiencias.
+          Kultrip helps you inspire your visitors, capture more qualified leads and close more sales 
+          thanks to the emotional power of stories. Travelers don't just look for destinations, they seek to live experiences.
         </p>
       </div>
     </section>

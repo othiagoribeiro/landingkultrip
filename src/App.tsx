@@ -24,7 +24,7 @@ function App() {
               </h1>
             </div>
             <div className="text-sm text-gray-600">
-              Widget para <span className="font-semibold">Su agência</span>
+              Widget for <span className="font-semibold">Your Agency</span>
             </div>
           </div>
         </div>
@@ -35,10 +35,10 @@ function App() {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
-            Crea tu itinerario turístico inspirado por tu historia favorita
+            Create your travel itinerary inspired by your favorite story
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-12 font-medium">
-            Vive una aventura de película
+            Live a movie-like adventure
           </p>
         </div>
 
@@ -50,34 +50,34 @@ function App() {
         {/* Features Section */}
         <section className="mt-20 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">
-            ¿Por qué integrar Kultrip en Su agência?
+            Why integrate Kultrip into Your Agency?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="w-12 h-12 flex items-center justify-center mx-auto mb-4">
                 <Film className="w-8 h-8 text-purple-600" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Experiencias Únicas</h3>
+              <h3 className="text-xl font-semibold mb-3">Unique Experiences</h3>
               <p className="text-gray-600">
-                Conecta destinos con historias famosas para crear viajes memorables e inspiradores.
+                Connect destinations with famous stories to create memorable and inspiring trips.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="w-12 h-12 flex items-center justify-center mx-auto mb-4">
                 <Target className="w-8 h-8 text-purple-600" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Personalización Total</h3>
+              <h3 className="text-xl font-semibold mb-3">Total Personalization</h3>
               <p className="text-gray-600">
-                Cada itinerario se adapta a los gustos, compañía y duración del viaje del usuario.
+                Each itinerary adapts to the user's preferences, travel companions, and trip duration.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="w-12 h-12 flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-8 h-8 text-purple-600" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Generación de Leads</h3>
+              <h3 className="text-xl font-semibold mb-3">Lead Generation</h3>
               <p className="text-gray-600">
-                Captura información de contacto y preferencias para seguimiento comercial directo.
+                Capture contact information and preferences for direct commercial follow-up.
               </p>
             </div>
           </div>
@@ -187,12 +187,12 @@ function App() {
           <div className="border-t border-gray-800 mt-12 pt-8">
             <div className="text-xs text-gray-500 max-w-4xl mx-auto text-center">
               <p className="mb-4">
-                <strong>Privacidad de datos:</strong> La información recopilada se utiliza únicamente para crear 
-                itinerarios personalizados y establecer contacto comercial. No compartimos datos con terceros.
+                <strong>Data Privacy:</strong> The information collected is used solely to create 
+                personalized itineraries and establish commercial contact. We do not share data with third parties.
               </p>
               <p>
-                Al proporcionar tu correo electrónico, aceptas recibir tu guía personalizada y comunicaciones 
-                relacionadas con nuestros servicios turísticos.
+                By providing your email address, you agree to receive your personalized guide and communications 
+                related to our travel services.
               </p>
             </div>
           </div>
