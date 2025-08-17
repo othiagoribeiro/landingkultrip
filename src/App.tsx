@@ -83,23 +83,6 @@ function App() {
           </div>
         </section>
 
-        {/* Integration Preview */}
-        <section className="mt-20 bg-white rounded-3xl p-8 shadow-xl">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
-            Integración perfecta con Animatium
-          </h2>
-          <div className="bg-gray-50 rounded-2xl p-6 border-2 border-dashed border-gray-300">
-            <div className="text-center text-gray-500">
-              <div className="text-4xl mb-4">🔌</div>
-              <h3 className="text-xl font-semibold mb-2">Widget Embebido</h3>
-              <p>
-                Kultrip se integra como un widget responsive en cualquier página de Animatium,
-                manteniendo la coherencia visual y la experiencia de usuario.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ROI Calculator */}
         <ROICalculator />
       </main>
