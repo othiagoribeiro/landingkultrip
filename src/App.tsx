@@ -1,6 +1,7 @@
 import React from 'react';
 import { ROICalculator } from './components/ROICalculator';
 import { Film, Target, Mail, Heart, Globe, Phone, MapPin } from 'lucide-react';
+import chileImage from './assets/Foto-Capa-Kultrip-10---Chile copy.png';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
       {/* Hero Section - Full Width */}
       <div className="relative h-96 md:h-[500px] w-full overflow-hidden">
         <img 
-          src="/src/assets/Foto-Capa-Kultrip-10---Chile copy.png" 
+          src={chileImage} 
           alt="Chile Travel Adventure" 
           className="w-full h-full object-cover"
         />
