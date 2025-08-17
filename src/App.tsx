@@ -1,6 +1,6 @@
 import React from 'react';
 import { ROICalculator } from './components/ROICalculator';
-import { Film, Target, Mail, Heart, Globe, Phone, MapPin } from 'lucide-react';
+import { Film, Target, Mail, Heart, Globe, Phone, MapPin, TrendingUp } from 'lucide-react';
 
 function App() {
   return (
