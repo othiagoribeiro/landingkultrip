@@ -1,6 +1,6 @@
 import React from 'react';
 import { ROICalculator } from './components/ROICalculator';
-import { Film, Target, Mail, Heart, Globe, Phone, MapPin, TrendingUp } from 'lucide-react';
+import { Film, Target, Mail, Heart, Globe, Phone, MapPin } from 'lucide-react';
 
 function App() {
   return (
@@ -53,102 +53,77 @@ function App() {
       <main className="max-w-7xl mx-auto px-6 py-12">
         {/* Video Sales Section */}
         <section className="mb-20">
-          {/* Header Section */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 px-6 py-3 rounded-full text-sm font-medium mb-6">
-              <div className="w-3 h-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full animate-pulse"></div>
-              <span className="font-semibold">Watch Demo</span>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Video Container */}
+            <div className="order-2 lg:order-1">
+              <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div className="aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/QyccRi4G8vo"
+                    title="Kultrip - Transform Your Travel Agency"
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                {/* Video overlay decoration */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full opacity-20"></div>
+                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-tr from-purple-300 to-pink-300 rounded-full opacity-15"></div>
+              </div>
             </div>
-            
-            <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              The magic of 
-              <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"> stories</span>
-              <br />drives your sales
-            </h2>
-            
-            <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              Kultrip helps you inspire your visitors, capture more qualified leads and close more sales 
-              thanks to the emotional power of stories.
-            </p>
-          </div>
 
-          {/* Video Container - Centered and Prominent */}
-          <div className="max-w-5xl mx-auto mb-16">
-            <div className="relative group">
-              {/* Main video container with enhanced styling */}
-              <div className="relative bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-8 shadow-2xl">
-                <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl">
-                  <div className="aspect-video">
-                    <iframe
-                      src="https://www.youtube.com/embed/QyccRi4G8vo"
-                      title="Kultrip - Transform Your Travel Agency"
-                      className="w-full h-full rounded-2xl"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                    ></iframe>
+            {/* Content */}
+            <div className="order-1 lg:order-2 space-y-6">
+              <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">
+                <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
+                Watch Demo
+              </div>
+              
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                The magic of 
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"> stories</span> drives your sales
+              </h2>
+              
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Kultrip helps you inspire your visitors, capture more qualified leads and close more sales 
+                thanks to the emotional power of stories.
+              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
                   </div>
-                  
-                  {/* Video frame decoration */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-blue-400 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <p className="text-gray-700">
+                    <strong>Emotional Connection:</strong> Travelers don't just look for destinations, they seek to live experiences
+                  </p>
                 </div>
                 
-                {/* Floating decorative elements */}
-                <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full opacity-10 group-hover:scale-110 transition-transform duration-500"></div>
-                <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-tr from-blue-300 to-purple-300 rounded-full opacity-10 group-hover:scale-110 transition-transform duration-500"></div>
-                
-                {/* Play button overlay effect */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-0 h-0 border-l-[12px] border-l-white border-y-[8px] border-y-transparent ml-1"></div>
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                   </div>
+                  <p className="text-gray-700">
+                    <strong>Higher Conversions:</strong> Story-driven itineraries convert 3x better than traditional listings
+                  </p>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                  </div>
+                  <p className="text-gray-700">
+                    <strong>Qualified Leads:</strong> Capture detailed preferences and contact information automatically
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Benefits Grid */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-green-100">
-              <div className="w-14 h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center mb-6">
-                <Heart className="w-7 h-7 text-white" />
+              
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button className="border-2 border-purple-200 text-purple-700 px-8 py-4 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300">
+                  Schedule Demo
+                </button>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Emotional Connection</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Travelers don't just look for destinations, they seek to live experiences that create lasting memories.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-blue-100">
-              <div className="w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
-                <TrendingUp className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Higher Conversions</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Story-driven itineraries convert 3x better than traditional listings, turning browsers into buyers.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-purple-100">
-              <div className="w-14 h-14 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
-                <Target className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Qualified Leads</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Capture detailed preferences and contact information automatically for direct commercial follow-up.
-              </p>
-            </div>
-          </div>
-
-          {/* CTA Section */}
-          <div className="text-center">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                Schedule Demo
-              </button>
-              <button className="border-2 border-purple-200 text-purple-700 px-8 py-4 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300">
-                Learn More
-              </button>
             </div>
           </div>
         </section>
