@@ -51,18 +51,84 @@ function App() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-6 py-12">
-        {/* Magic of Stories Section */}
-        <section className="text-center p-6 bg-white rounded-2xl shadow-lg max-w-4xl mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <span className="text-2xl">✨</span>
-            <h2 className="text-xl font-bold text-gray-800">
-              The magic of stories drives your sales
-            </h2>
+        {/* Video Sales Section */}
+        <section className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Video Container */}
+            <div className="order-2 lg:order-1">
+              <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div className="aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/QyccRi4G8vo"
+                    title="Kultrip - Transform Your Travel Agency"
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                {/* Video overlay decoration */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full opacity-20"></div>
+                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-tr from-purple-300 to-pink-300 rounded-full opacity-15"></div>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="order-1 lg:order-2 space-y-6">
+              <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">
+                <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
+                Watch Demo
+              </div>
+              
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                The magic of 
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"> stories</span> drives your sales
+              </h2>
+              
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Kultrip helps you inspire your visitors, capture more qualified leads and close more sales 
+                thanks to the emotional power of stories.
+              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                  </div>
+                  <p className="text-gray-700">
+                    <strong>Emotional Connection:</strong> Travelers don't just look for destinations, they seek to live experiences
+                  </p>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                  </div>
+                  <p className="text-gray-700">
+                    <strong>Higher Conversions:</strong> Story-driven itineraries convert 3x better than traditional listings
+                  </p>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                  </div>
+                  <p className="text-gray-700">
+                    <strong>Qualified Leads:</strong> Capture detailed preferences and contact information automatically
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                  Start Free Trial
+                </button>
+                <button className="border-2 border-purple-200 text-purple-700 px-8 py-4 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300">
+                  Schedule Demo
+                </button>
+              </div>
+            </div>
           </div>
-          <p className="text-gray-600 leading-relaxed">
-            Kultrip helps you inspire your visitors, capture more qualified leads and close more sales 
-            thanks to the emotional power of stories. Travelers don't just look for destinations, they seek to live experiences.
-          </p>
         </section>
 
         {/* Features Section */}
