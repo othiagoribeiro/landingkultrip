@@ -279,7 +279,6 @@ function App() {
                   <button className="text-gray-400 hover:text-white transition-colors">
                     Book a Call
                   </button>
-                  </a>
                 </li>
                 <li>
                   <a href="#kultrip" className="text-gray-400 hover:text-white transition-colors">
