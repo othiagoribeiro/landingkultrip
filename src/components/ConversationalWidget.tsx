@@ -123,26 +123,9 @@ export const ConversationalWidget: React.FC = () => {
   if (!isStarted) {
     return (
       <div className="bg-white rounded-3xl shadow-2xl p-8 h-full flex flex-col justify-center items-center text-center">
-        <div className="mb-8">
-          <img 
-            src="/src/assets/icone-roxo.png" 
-            alt="Kultrip" 
-            className="w-16 h-16 mx-auto mb-4"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-            }}
-          />
-          <h3 className="text-3xl font-bold text-gray-800 mb-4">
-            Discover your next adventure
-          </h3>
-          <p className="text-lg text-gray-600 mb-8">
-            Create a unique itinerary inspired by your favorite stories
-          </p>
-        </div>
-        
         <button
           onClick={handleStart}
-          className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+          className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mt-8"
         >
           Start your journey
           <ChevronRight className="w-5 h-5" />
