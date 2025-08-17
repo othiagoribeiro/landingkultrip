@@ -102,7 +102,7 @@ export const ROICalculator: React.FC = () => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Average ticket per sale (€)
+                Average sale value ($)
               </label>
               <input
                 type="number"
@@ -202,7 +202,7 @@ export const ROICalculator: React.FC = () => {
                   </div>
                   {kultripActive && additionalSales > 0 && (
                     <div className="text-sm text-green-600">
-                      +{additionalSales.toLocaleString()} ventas
+                      +{additionalSales.toLocaleString()} sales
                     </div>
                   )}
                 </div>
@@ -215,11 +215,11 @@ export const ROICalculator: React.FC = () => {
                 </div>
                 <div className="text-right">
                   <div className={`text-2xl font-bold ${kultripActive ? 'text-purple-600' : 'text-gray-800'}`}>
-                    €{displayRevenue.toLocaleString()}
+                    ${displayRevenue.toLocaleString()}
                   </div>
                   {kultripActive && additionalRevenue > 0 && (
                     <div className="text-lg text-green-600 font-semibold">
-                      +€{additionalRevenue.toLocaleString()}
+                      +${additionalRevenue.toLocaleString()}
                     </div>
                   )}
                 </div>
@@ -233,7 +233,7 @@ export const ROICalculator: React.FC = () => {
                   <span className="font-semibold text-purple-800">Estimated annual impact</span>
                 </div>
                 <div className="text-2xl font-bold text-purple-600">
-                  +€{(additionalRevenue * 12).toLocaleString()}
+                  +${(additionalRevenue * 12).toLocaleString()}
                 </div>
                 <div className="text-sm text-purple-700 mt-1">
                   Additional revenue per year

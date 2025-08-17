@@ -131,7 +131,7 @@ function App() {
         {/* Features Section */}
         <section className="mt-20 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">
-            Why integrate Kultrip into Your Agency?
+            Why integrate Kultrip into your agency?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg">
@@ -185,7 +185,7 @@ function App() {
               <div>
                 <input
                   type="text"
-                  placeholder="Nome *"
+                  placeholder="Name *"
                   required
                   className="w-full p-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
                 />
@@ -201,7 +201,7 @@ function App() {
               <div>
                 <input
                   type="tel"
-                  placeholder="Telefone *"
+                  placeholder="Phone *"
                   required
                   className="w-full p-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
                 />
@@ -209,13 +209,13 @@ function App() {
               <div>
                 <input
                   type="text"
-                  placeholder="Empresa *"
+                  placeholder="Company *"
                   required
                   className="w-full p-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
                 />
               </div>
               <p className="text-sm text-white/80 text-left">
-                * Todos os dados são obrigatórios
+                * All fields are required
               </p>
               <button
                 type="submit"
@@ -263,23 +263,23 @@ function App() {
               <h3 className="text-xl font-bold mb-6">Quick Links</h3>
               <ul className="space-y-4">
                 <li>
-                  <a href="#integrate" className="text-gray-400 hover:text-white transition-colors">
-                    Integrate
+                  <a href="#features" className="text-gray-400 hover:text-white transition-colors">
+                    Features
                   </a>
                 </li>
                 <li>
                   <a href="#calculator" className="text-gray-400 hover:text-white transition-colors">
-                    Calculator
+                    ROI Calculator
                   </a>
                 </li>
                 <li>
                   <button className="text-gray-400 hover:text-white transition-colors">
-                    Book a Call
+                    Book Demo
                   </button>
                 </li>
                 <li>
-                  <a href="#kultrip" className="text-gray-400 hover:text-white transition-colors">
-                    Kultrip
+                  <a href="#about" className="text-gray-400 hover:text-white transition-colors">
+                    About
                   </a>
                 </li>
               </ul>
