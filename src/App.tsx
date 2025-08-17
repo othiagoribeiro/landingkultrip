@@ -10,9 +10,14 @@ function App() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">K</span>
-              </div>
+              <img 
+                src="/src/assets/icone-roxo.png" 
+                alt="Kultrip" 
+                className="w-10 h-10"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 Kultrip
               </h1>
@@ -21,33 +26,33 @@ function App() {
         </div>
       </header>
 
-    </div>
-
-    {/* Hero Section - Full Width */}
-    <div className="relative h-96 md:h-[500px] overflow-hidden">
-      <img 
-        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-        alt="Chile Travel Adventure" 
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-      <div className="absolute inset-0 flex items-center justify-center text-center text-white px-6">
-        <div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
-            Create story-inspired itineraries to sell
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 font-medium drop-shadow-md">
-            Attract qualified leads, boost conversions, and increase sales with Kultrip
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-6 py-12">
+        {/* Hero Section */}
+        <div className="relative h-96 md:h-[500px] rounded-3xl overflow-hidden mb-16">
+          <img 
+            src="/src/assets/Foto-Capa-Kultrip-10---Chile.png" 
+            alt="Chile Travel Adventure" 
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+          <div className="absolute inset-0 flex items-center justify-center text-center text-white px-6">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
+                Create story-inspired itineraries to sell
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 font-medium drop-shadow-md">
+                Attract qualified leads, boost conversions, and increase sales with Kultrip
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Magic of Stories Section */}
-        <section className="text-center p-6 bg-white rounded-2xl shadow-lg max-w-4xl mx-auto mt-16">
+        <section className="mt-16 text-center p-6 bg-white rounded-2xl shadow-lg max-w-4xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-3">
             <span className="text-2xl">✨</span>
             <h2 className="text-xl font-bold text-gray-800">
@@ -102,7 +107,7 @@ function App() {
       </main>
 
       {/* Call to Action Section - Full Width */}
-      <section className="bg-gradient-to-r from-purple-600 to-blue-600 py-16 text-center text-white">
+      <section className="mt-20 bg-gradient-to-r from-purple-600 to-blue-600 py-16 text-center text-white">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Sell stories, not trips.
@@ -188,7 +193,7 @@ function App() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-purple-400" />
-                  <span className="text-gray-400">charles.santana@kultrip.com</span>
+                  <span className="text-gray-400">contact@kultrip.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-purple-400" />
