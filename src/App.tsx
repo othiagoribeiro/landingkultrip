@@ -32,12 +32,9 @@ function App() {
       {/* Hero Section - Full Width */}
       <div className="relative h-96 md:h-[500px] w-full overflow-hidden">
         <img 
-          src="/src/assets/Foto-Capa-Kultrip-10---Chile.png" 
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
           alt="Chile Travel Adventure" 
           className="w-full h-full object-cover"
-          onError={(e) => {
-            e.currentTarget.style.display = 'none';
-          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center text-center text-white px-6">
