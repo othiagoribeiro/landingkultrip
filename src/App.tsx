@@ -24,7 +24,7 @@ function App() {
               </h1>
             </div>
             <div className="text-sm text-gray-600">
-              Widget para <span className="font-semibold">Animatium</span>
+              Widget para <span className="font-semibold">Su agência</span>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@ function App() {
         {/* Features Section */}
         <section className="mt-20 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">
-            ¿Por qué integrar Kultrip en Animatium?
+            ¿Por qué integrar Kultrip en Su agência?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg">
